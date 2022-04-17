@@ -47,3 +47,6 @@
 - yarn add react-router-dom.
 
 # Configuring Routes
+
+- Added a BrowserRouter in main.jsx for including main parent component
+- Added Routes and Route for adding a routes in the components.
