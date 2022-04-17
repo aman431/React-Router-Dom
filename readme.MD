@@ -40,3 +40,10 @@
 - It is a fully-featured and server-side routing library for react.
 - It's help create and navigate between different URLs that make up your web application
 - Provide different URLs for different Components in the application.
+
+## Installation
+
+- npm install react-router-dom@6(@6 is the version specification)
+- yarn add react-router-dom.
+
+# Configuring Routes
