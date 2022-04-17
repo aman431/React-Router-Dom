@@ -50,3 +50,5 @@
 
 - Added a BrowserRouter in main.jsx for including main parent component
 - Added Routes and Route for adding a routes in the components.
+
+- Eg:- import {BrowserRouter, Routes, Route} from 'react-router-dom
