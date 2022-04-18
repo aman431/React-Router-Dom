@@ -76,7 +76,7 @@
 ## Navigating Programmtically
 
 - For Navigate a url programmatically after click to the button. we are using a useNavigate hooks from react-router-dom.
-- In useNavigate hooks from react-router-dom just pass the url name it will direct route to the url which you specified on the click.
+- In useNavigate hooks from react-router-dom just pass the url name it will re-direct to the route to the url which you specified on the useNavigate hooks.
 
 - For Eg:-
 
