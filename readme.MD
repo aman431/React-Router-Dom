@@ -69,6 +69,10 @@ import {Link} from 'react-router-dom
 - The <NavLink> component is similar to the <Link> component, except that several props can be specified that help you to conditionally add styling attributes to the rendered element.
 - More used for active link like breadcrumb, for Navbar and etc. Where you especially needed to provide a more styling to the active current tab link.
 
+```ruby
+import {NavLink} from 'react-router-dom
+```
+
 ### Different Props excepting is :-
 
 - activeClassName props :- The class nameactive is applied to the active<NavLink>component/
