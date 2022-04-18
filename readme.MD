@@ -72,3 +72,17 @@
 - active props:- The exact prop can be used to apply the active class or activeStyle only when the path matches the browser's URL.
 - strict props:- The <NavLink> component also supports the strict prop, which can be used to match the trailing slash specified in the to prop:
 - isActive prop:- The isActive prop is used to determine whether the <NavLink> component should have the active class applied
+
+## Navigating Programmtically
+
+- For Navigate a url programmatically after click to the button. we are using a useNavigate hooks from react-router-dom.
+- In useNavigate hooks from react-router-dom just pass the url name it will direct route to the url which you specified on the click.
+
+- For Eg:-
+
+```ruby
+       import {useNavigate} from 'react-router-dom';
+
+       let navigate = useNavigate();
+       navigate('path-name')
+```

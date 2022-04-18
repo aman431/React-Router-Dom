@@ -1,5 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
-  return <div>Home Page</div>;
+  const navigate = useNavigate();
+  return (
+    <React.Fragment>
+      <div>Home Page</div>
+      <button onClick={() => navigate("order-summary")}>Place Order</button>
+    </React.Fragment>
+  );
 };
