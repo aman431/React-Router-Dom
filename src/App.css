@@ -40,3 +40,17 @@
 button {
   font-size: calc(10px + 2vmin);
 }
+
+
+nav {
+  background-color: aliceblue;
+  padding: 16px 32px;
+}
+
+nav a {
+  margin-right: 10px;
+}
+/* nav a.active {
+  text-decoration: none;
+  font-weight: bold;
+} */

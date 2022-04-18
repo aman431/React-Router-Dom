@@ -55,5 +55,20 @@
 
 ## Link
 
-- For routing from one component to another component we are using link from react-router-dom.
-- Link are most similar to the <a></a> anchor tag. The difference is only that link is not refreshing a page. On the other hand anchor tag is refreshing your page
+- A <Link> component is used to navigate to an <indexentry content=" component:about"> existing route that is defined using the <Route> component.
+- To navigate to a route, specify the pathname used in the route as a value to the to prop.
+
+- Eg:- import {Link} from 'react-router-dom'
+
+## Active Link (NavLink)
+
+- The <NavLink> component is similar to the <Link> component, except that several props can be specified that help you to conditionally add styling attributes to the rendered element.
+- More used for active link like breadcrumb, for Navbar and etc. Where you especially needed to provide a more styling to the active current tab link.
+
+### Different Props excepting is :-
+
+- activeClassName props :- The class nameactive is applied to the active<NavLink>component/
+- activeStyle props:- The activeStyle prop is also used to style the selected <NavLink>
+- active props:- The exact prop can be used to apply the active class or activeStyle only when the path matches the browser's URL.
+- strict props:- The <NavLink> component also supports the strict prop, which can be used to match the trailing slash specified in the to prop:
+- isActive prop:- The isActive prop is used to determine whether the <NavLink> component should have the active class applied
