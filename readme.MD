@@ -51,8 +51,6 @@
 - Added a BrowserRouter in main.jsx for including main parent component
 - Added Routes and Route for adding a routes in the components.
 
-- Eg:-
-
 ```ruby
 import {BrowserRouter, Routes, Route} from 'react-router-dom
 ```
@@ -61,8 +59,6 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom
 
 - A <Link> component is used to navigate to an <indexentry content=" component:about"> existing route that is defined using the <Route> component.
 - To navigate to a route, specify the pathname used in the route as a value to the to prop.
-
-- Eg:-
 
 ```ruby
 import {Link} from 'react-router-dom
@@ -85,8 +81,6 @@ import {Link} from 'react-router-dom
 
 - For Navigate a url programmatically after click to the button. we are using a useNavigate hooks from react-router-dom.
 - In useNavigate hooks from react-router-dom just pass the url name it will re-direct to the route to the url which you specified on the useNavigate hooks.
-
-- Eg:-
 
 ```ruby
        import {useNavigate} from 'react-router-dom';
