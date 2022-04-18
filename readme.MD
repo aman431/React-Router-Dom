@@ -52,3 +52,8 @@
 - Added Routes and Route for adding a routes in the components.
 
 - Eg:- import {BrowserRouter, Routes, Route} from 'react-router-dom
+
+## Link
+
+- For routing from one component to another component we are using link from react-router-dom.
+- Link are most similar to the <a></a> anchor tag. The difference is only that link is not refreshing a page. On the other hand anchor tag is refreshing your page
