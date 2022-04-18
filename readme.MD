@@ -1,6 +1,6 @@
 [![CodeSnip](https://img.shields.io/website?label=CodeSnip&style=for-the-badge&url=https://snipacode.netlify.app/)](https://snipacode.netlify.app/)
 
-## React Router Dom
+# React Router Dom
 
 <!-- Your Instgram for CodeSnippets
 
@@ -46,7 +46,7 @@
 - npm install react-router-dom@6(@6 is the version specification)
 - yarn add react-router-dom.
 
-# Configuring Routes
+## Configuring Routes
 
 - Added a BrowserRouter in main.jsx for including main parent component
 - Added Routes and Route for adding a routes in the components.
