@@ -15,7 +15,7 @@
 ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
 ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) -->
 
-- Covering all the points of react-router-dom and Many More
+- Covering all the points of react-router-dom and Many More stuffs
 - Added some remote changes
 
 ## Topic which is covered
@@ -51,14 +51,22 @@
 - Added a BrowserRouter in main.jsx for including main parent component
 - Added Routes and Route for adding a routes in the components.
 
-- Eg:- import {BrowserRouter, Routes, Route} from 'react-router-dom
+- Eg:-
+
+```ruby
+import {BrowserRouter, Routes, Route} from 'react-router-dom
+```
 
 ## Link
 
 - A <Link> component is used to navigate to an <indexentry content=" component:about"> existing route that is defined using the <Route> component.
 - To navigate to a route, specify the pathname used in the route as a value to the to prop.
 
-- Eg:- import {Link} from 'react-router-dom'
+- Eg:-
+
+```ruby
+import {Link} from 'react-router-dom
+```
 
 ## Active Link (NavLink)
 
@@ -78,7 +86,7 @@
 - For Navigate a url programmatically after click to the button. we are using a useNavigate hooks from react-router-dom.
 - In useNavigate hooks from react-router-dom just pass the url name it will re-direct to the route to the url which you specified on the useNavigate hooks.
 
-- For Eg:-
+- Eg:-
 
 ```ruby
        import {useNavigate} from 'react-router-dom';
