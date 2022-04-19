@@ -95,9 +95,8 @@ navigate('path-name')
 
 ## No Match Route
 
-- To handle the 404 routes which you have doesn't specified in the url of routes in your application is by No Match Routes.
-- For that you have to specified a special route by using a asterisk(\*) symbol.
-- It's handle your page not found(404) Routes
+- When no other route matches the URL, you can render a "not found" route using path="\*"
+- This route will match any URL, but will have the weakest precedence so the router will only pick it if no other routes match.
 
 ```ruby
 <Route path="*" element={<NoMatch/>}></Route>
@@ -106,6 +105,7 @@ navigate('path-name')
 ## Nested Route
 
 - Nested Routes are Routes is required when you want to routes to the child components from the parent components.
+- Routes can be nested inside one another, and their paths will nest too (child inheriting the parent)
 - To rendering to the child components. It will required to wrap your child components routes inside the parent components routes. check the below example.
 
 ```ruby
@@ -121,4 +121,15 @@ navigate('path-name')
 ```ruby
 import {Outlet} from 'react-router-dom'
 <Outlet />
+```
+
+## Index Route
+
+- Index routes can be thought of as "default child routes"
+- When a parent route has multiple children, but the URL is just at the parent's path, you probably want to render something into the outlet.
+
+```ruby
+<Route>
+       <Route index element={<ChildComponent />} />
+</Route>
 ```
