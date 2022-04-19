@@ -133,3 +133,11 @@ import {Outlet} from 'react-router-dom'
        <Route index element={<ChildComponent />} />
 </Route>
 ```
+
+## Dynamic Route
+
+- we can create a dynamic routes by just passing users/:id where id is anything. It's number and string. Take a below example
+
+```ruby
+<Route path="/users/:id" elements={<UserDetails />}></Route>
+```

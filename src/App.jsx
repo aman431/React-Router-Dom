@@ -6,9 +6,11 @@ import { Navbar } from "./component/Navbar.jsx";
 import { OrderSummary } from "./component/OrderSummary.jsx";
 import { NoMatch } from "./component/NoMatch";
 import { Product } from "./component/Product";
+import { Users } from "./component/Users";
 
 import { FeaturedProduct } from "./component/FeaturedProduct";
 import { NewProduct } from "./component/NewProduct";
+import { UserDetails } from "./component/UserDetails";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path="featured" element={<FeaturedProduct />}></Route>
           <Route path="new" element={<NewProduct />}></Route>
         </Route>
+        <Route path="/users" element={<Users />} />
+        <Route path="/users/:id" element={<UserDetails />} />
       </Routes>
     </div>
   );
