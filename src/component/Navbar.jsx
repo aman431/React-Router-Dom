@@ -7,12 +7,15 @@ export const Navbar = () => {
     };
   };
   return (
-    <nav>
+    <nav className="primary-01">
       <NavLink to="/" style={NavLinkStyles}>
         Home
       </NavLink>
       <NavLink to="/about" style={NavLinkStyles}>
         About
+      </NavLink>
+      <NavLink to="/product" style={NavLinkStyles}>
+        Product
       </NavLink>
     </nav>
   );

@@ -102,3 +102,23 @@ import {NavLink} from 'react-router-dom
 ```ruby
        <Route path="*" element={<NoMatch/>}></Route>
 ```
+
+## Nested Route
+
+- Nested Routes are Routes is required when you want to routes to the child components from the parent components.
+- To rendering to the child components. It will required to wrap your child components routes inside the parent components routes. check the below example.
+
+```ruby
+       <Route path"parent-routes" element={<parentComponent />}>
+              <Route path="child-01" element={<ChildComponent />}></Route>
+              <Route path="child-02" element={<ChildComponent />}></Route>
+       </Route>
+```
+
+- we are also using Outlet from react-router-dom to matching your child component. If you miss to add a Outlet it will not redirect to the child components.
+- The Outlet component renders the matching child route with its respective component. Take a below example to include your Outlet
+
+```ruby
+       import {Outlet} from 'react-router-dom'
+       <Outlet />
+```
