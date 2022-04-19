@@ -92,3 +92,13 @@ import {NavLink} from 'react-router-dom
        let navigate = useNavigate();
        navigate('path-name')
 ```
+
+## No Match Route
+
+- To handle the 404 routes which you have doesn't specified in the url of routes in your application is by No Match Routes.
+- For that you have to specified a special route by using a asterisk(\*) symbol.
+- It's handle your page not found(404) Routes
+
+```ruby
+       <Route path="*" element={<NoMatch/>}></Route>
+```
