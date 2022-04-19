@@ -87,10 +87,10 @@ import {NavLink} from 'react-router-dom
 - In useNavigate hooks from react-router-dom just pass the url name it will re-direct to the route to the url which you specified on the useNavigate hooks.
 
 ```ruby
-       import {useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
-       let navigate = useNavigate();
-       navigate('path-name')
+let navigate = useNavigate();
+navigate('path-name')
 ```
 
 ## No Match Route
@@ -100,7 +100,7 @@ import {NavLink} from 'react-router-dom
 - It's handle your page not found(404) Routes
 
 ```ruby
-       <Route path="*" element={<NoMatch/>}></Route>
+<Route path="*" element={<NoMatch/>}></Route>
 ```
 
 ## Nested Route
@@ -109,16 +109,16 @@ import {NavLink} from 'react-router-dom
 - To rendering to the child components. It will required to wrap your child components routes inside the parent components routes. check the below example.
 
 ```ruby
-       <Route path"parent-routes" element={<parentComponent />}>
-              <Route path="child-01" element={<ChildComponent />}></Route>
-              <Route path="child-02" element={<ChildComponent />}></Route>
-       </Route>
+<Route path"parent-routes" element={<parentComponent />}>
+       <Route path="child-01" element={<ChildComponent />}></Route>
+       <Route path="child-02" element={<ChildComponent />}></Route>
+</Route>
 ```
 
 - we are also using Outlet from react-router-dom to matching your child component. If you miss to add a Outlet it will not redirect to the child components.
 - The Outlet component renders the matching child route with its respective component. Take a below example to include your Outlet
 
 ```ruby
-       import {Outlet} from 'react-router-dom'
-       <Outlet />
+import {Outlet} from 'react-router-dom'
+<Outlet />
 ```
