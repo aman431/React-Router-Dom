@@ -1,4 +1,4 @@
-[![CodeSnip](https://img.shields.io/website?label=CodeSnip&style=for-the-badge&url=https://snipacode.netlify.app/)](https://snipacode.netlify.app/)
+<!-- [![CodeSnip](https://img.shields.io/website?label=CodeSnip&style=for-the-badge&url=https://snipacode.netlify.app/)](https://snipacode.netlify.app/) -->
 
 # React Router Dom
 
@@ -140,4 +140,15 @@ import {Outlet} from 'react-router-dom'
 
 ```ruby
 <Route path="/users/:id" elements={<UserDetails />}></Route>
+```
+
+## URL Params
+
+- For getting a id from the urls we are using a URL params.
+- By using useParams(). We can extract a id from the specific domain.
+- To use a useParams(). We need to import a useParams from react-router-dom. Consider the below example
+
+```ruby
+import {useParam} from 'react-router-dom'
+let {id} = useParams();
 ```
