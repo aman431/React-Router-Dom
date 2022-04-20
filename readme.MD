@@ -152,3 +152,19 @@ import {Outlet} from 'react-router-dom'
 import {useParam} from 'react-router-dom'
 let {id} = useParams();
 ```
+
+## Lazy Loading
+
+- To prevent the entire loading of the application at once, we use the concept of lazy loading to decrease the DOM load time and to increase the speed of the application. Take down a below example
+- for use a lazy component we have to use a Lazy componenet from react. Take down a below cases.
+
+```ruby
+import {Suspense} from 'react'
+const LazyLoading = React.lazy(() => import('component-url'))
+
+return (
+       <React.Suspense fallback="Loading ...">
+              <Component />
+       </React.Suspense>
+)
+```
